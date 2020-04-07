@@ -30,11 +30,12 @@ def get_operator(operator):
     
 def fact():
     facto = 1
-    global i
-    num=display.get(i-1)
+    number = display.get()
+    num = number[-1:]
     for x in range(1,num+1):
         facto = facto * x
-    display.insert(i,facto)
+    clear_all()
+    display.insert(0,facto)
     
 
 def clear_all():
